@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end 
 
   def require_login
-    redirect_to '/login' if session[:name].nil? || session[:name.empty?]
+    redirect_to '/login' if session[:name].nil? || session[:name].empty?
   end 
 end
